@@ -1,0 +1,4 @@
+0: Male single
+1: Female: divorced/separated/married
+2: Male divorced/separated
+3: Male married/widowed

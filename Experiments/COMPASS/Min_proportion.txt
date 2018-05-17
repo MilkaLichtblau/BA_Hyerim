@@ -1,0 +1,4 @@
+0.5 -- Caucasian
+0.2 -- African-American
+0.2 -- Hispanic
+0.1 -- Asian
