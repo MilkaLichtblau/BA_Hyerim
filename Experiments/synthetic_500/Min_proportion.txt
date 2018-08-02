@@ -1,0 +1,6 @@
+k=300
+
+Group 0: 0.3
+Group 1: 0.3
+Group 2: 0.2
+Group 3: 0.2

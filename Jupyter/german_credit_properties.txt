@@ -1,0 +1,5 @@
+Group 0: 548.0
+Group 1: 310.0
+Group 2: 50.0
+Group 3: 92.0
+Size of data set: 1000

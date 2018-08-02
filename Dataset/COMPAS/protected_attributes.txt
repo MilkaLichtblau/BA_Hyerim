@@ -1,0 +1,4 @@
+0: Caucasian
+1: African-American
+2: Hispanic
+3: Asian

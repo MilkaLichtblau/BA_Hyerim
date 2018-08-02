@@ -1,0 +1,4 @@
+0.4 -- Male single
+0.3 -- Female divorced/separated/married
+0.2 -- Male divorced/separated
+0.1 -- Male married/widowed

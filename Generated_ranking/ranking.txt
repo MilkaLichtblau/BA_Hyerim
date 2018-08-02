@@ -1,0 +1,90 @@
+{'Score': 0.790280217, 'Group': 0}
+1: [1, 0, 0, 0]Minimum Target: [ 0.  0.  0.]
+CDF: 0.489076210108
+{'Score': 0.761418313, 'Group': 0}
+2: [2, 0, 0, 0]Minimum Target: [ 0.  0.  0.]
+CDF: 0.143143629273
+{'Score': 0.744449197, 'Group': 1}
+3: [2, 1, 0, 0]Minimum Target: [ 1.  0.  0.]
+CDF: 0.215406326187
+{'Score': 0.731606027, 'Group': 0}
+4: [3, 1, 0, 0]Minimum Target: [ 1.  0.  0.]
+CDF: 0.102354298793
+{'Score': 0.661154365, 'Group': 2}
+5: [3, 1, 1, 0]Minimum Target: [ 1.  1.  0.]
+CDF: 0.156660082998
+{'Score': 0.700277015, 'Group': 1}
+6: [3, 2, 1, 0]Minimum Target: [ 2.  1.  0.]
+CDF: 0.191685274651
+{'Score': 0.72302068, 'Group': 0}
+7: [4, 2, 1, 0]Minimum Target: [ 2.  1.  0.]
+CDF: 0.113512148742
+{'Score': 0.66152139, 'Group': 3}
+8: [4, 2, 1, 1]Minimum Target: [ 2.  1.  1.]
+CDF: 0.155038457835
+{'Score': 0.642121447, 'Group': 2}
+9: [4, 2, 2, 1]Minimum Target: [ 2.  2.  1.]
+CDF: 0.195757722599
+{'Score': 0.72145307, 'Group': 0}
+10: [5, 2, 2, 1]Minimum Target: [ 2.  2.  1.]
+CDF: 0.125165180181
+{'Score': 0.696901829, 'Group': 1}
+11: [5, 3, 2, 1]Minimum Target: [ 3.  2.  1.]
+CDF: 0.170767725836
+{'Score': 0.712601111, 'Group': 0}
+12: [6, 3, 2, 1]Minimum Target: [ 3.  2.  1.]
+CDF: 0.111786383426
+{'Score': 0.686238379, 'Group': 1}
+13: [6, 4, 2, 1]Minimum Target: [ 4.  2.  1.]
+CDF: 0.134509535933
+{'Score': 0.629634464, 'Group': 2}
+14: [6, 4, 3, 1]Minimum Target: [ 4.  3.  1.]
+CDF: 0.16691448429
+{'Score': 0.711459991, 'Group': 0}
+15: [7, 4, 3, 1]Minimum Target: [ 4.  3.  1.]
+CDF: 0.11558676158
+{'Score': 0.654590065, 'Group': 3}
+16: [7, 4, 3, 2]Minimum Target: [ 4.  3.  2.]
+CDF: 0.141931327409
+{'Score': 0.681490236, 'Group': 1}
+17: [7, 5, 3, 2]Minimum Target: [ 5.  3.  2.]
+CDF: 0.175483017642
+{'Score': 0.710031333, 'Group': 0}
+18: [8, 5, 3, 2]Minimum Target: [ 5.  3.  2.]
+CDF: 0.125712325186
+{'Score': 0.624867352, 'Group': 2}
+19: [8, 5, 4, 2]Minimum Target: [ 5.  4.  2.]
+CDF: 0.153235882103
+{'Score': 0.694348159, 'Group': 0}
+20: [9, 5, 4, 2]Minimum Target: [ 5.  4.  2.]
+CDF: 0.110063115075
+{'Score': 0.672584081, 'Group': 1}
+21: [9, 6, 4, 2]Minimum Target: [ 6.  4.  2.]
+CDF: 0.136791879392
+{'Score': 0.670258184, 'Group': 1}
+22: [9, 7, 4, 2]Minimum Target: [ 7.  4.  2.]
+CDF: 0.155096312266
+{'Score': 0.693609141, 'Group': 0}
+23: [10, 7, 4, 2]Minimum Target: [ 7.  4.  2.]
+CDF: 0.115363213039
+{'Score': 0.617870089, 'Group': 2}
+24: [10, 7, 5, 2]Minimum Target: [ 7.  5.  2.]
+CDF: 0.138945187925
+{'Score': 0.693068539, 'Group': 0}
+25: [11, 7, 5, 2]Minimum Target: [ 7.  5.  2.]
+CDF: 0.103390621194
+{'Score': 0.619056974, 'Group': 3}
+26: [11, 7, 5, 3]Minimum Target: [ 7.  5.  3.]
+CDF: 0.126915950133
+{'Score': 0.669780358, 'Group': 1}
+27: [11, 8, 5, 3]Minimum Target: [ 8.  5.  3.]
+CDF: 0.150585353155
+{'Score': 0.691957378, 'Group': 0}
+28: [12, 8, 5, 3]Minimum Target: [ 8.  5.  3.]
+CDF: 0.11420170548
+{'Score': 0.616820801, 'Group': 2}
+29: [12, 8, 6, 3]Minimum Target: [ 8.  6.  3.]
+CDF: 0.135846034948
+{'Score': 0.689963428, 'Group': 0}
+30: [13, 8, 6, 3]Minimum Target: [ 8.  6.  3.]
+CDF: 0.103003761741
