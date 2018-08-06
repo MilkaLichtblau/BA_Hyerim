@@ -210,8 +210,8 @@ def single_test_2_table (singleTest, multipleTest, p, N, alpha) :
 '''
 Saves the k-vector computed from single test (multinom) as a table
 '''
-def single_test_2_table_multinom (singleTest, multipleTest, p, N, alpha) :
-    fileName = "./singleTest_multinom/"+str(p)+"_N"+str(N)+"_alpha"+str(alpha)+"_"+str(multipleTest)+".csv"
+def single_test_2_table_multinom (singleTest, multipleTest, p, N, k, alpha) :
+    fileName = "./singleTest_multinom/"+str(len(p))+"_k"+str(k)+"_N"+str(N)+"_alpha"+str(alpha)+"_"+str(multipleTest)+".csv"
     if not os.path.exists(os.path.dirname(fileName)):
         try:
             os.makedirs(os.path.dirname(fileName))
@@ -220,7 +220,7 @@ def single_test_2_table_multinom (singleTest, multipleTest, p, N, alpha) :
                 raise
             
     df = pd.DataFrame(data=(np.array(singleTest)).astype(int))
-    df.columns = ["# failures"]
+    df.columns = ["# failures - p: "+str(p)]
     df.index = np.array(range(len(singleTest)))+1
     df.to_csv(fileName, index=True, index_label = "K")
  
@@ -289,17 +289,58 @@ def perform_tests_multinom (p, k, N, alpha):
         multipleTest += multiple_test_multinom(k, counter, p, alpha)
     
     # save result of the single test as a table
-    single_test_2_table_multinom (singleTest, multipleTest, p, N, alpha)
+    single_test_2_table_multinom (singleTest, multipleTest, p, N, k, alpha)
     
     return singleTest, multipleTest
 
-if __name__ == '__main__':
-    import argparse
-    parser = argparse.ArgumentParser(description="p, k, N, alpha")
-    parser.add_argument('-p','--p', nargs="+", required=True, type=float, dest="p")
-    parser.add_argument('-k','--k', required=True, type=int, dest="k")
-    parser.add_argument('-n','--n', required=True, type=int, dest="n")
-    parser.add_argument('-a','--alpha',required=True, type=float, dest="alpha")
-    args = parser.parse_args()
+p = [
+	[0.1, 0.8, 0.1],
+	[0.5, 0.4, 0.1],
+	[0.4, 0.3, 0.2, 0.1],
+	[0.3, 0.3, 0.2, 0.2],
+	[0.4, 0.4, 0.1, 0.1],
+	[0.3, 0.2, 0.2, 0.2, 0.1],
+	[0.3, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1],
+	[0.2, 0.2, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1],
+	[1./12]*12,
+	[1./16]*16,
+	[1./20]*20,
+	[1./24]*24,
+	[1./28]*28,
+	[1./32]*32
+	]    
+k1 = 1000
+k2 = 1500
+k3 = 10000
+k4 = 100000
+k5 = 1000000
+
+a1 = 0.1
+a2 = 0.05
+a3 = 0.01
+
+N = 10000
+
+i = 1
+for p_i in p:
+	perform_tests_multinom (p_i, k1, N, a1)
+	perform_tests_multinom (p_i, k1, N, a3)
+	perform_tests_multinom (p_i, k2, N, a2)
+	perform_tests_multinom (p_i, k3, N, a1)
+	perform_tests_multinom (p_i, k4, N, a1)
+	perform_tests_multinom (p_i, k5, N, a1)
+	
+	print i,".Experiment with p: ",p_i, " finished!"
+	i += 1
+
+
+# if __name__ == '__main__':
+#     import argparse
+#     parser = argparse.ArgumentParser(description="p, k, N, alpha")
+#     parser.add_argument('-p','--p', nargs="+", required=True, type=float, dest="p")
+#     parser.add_argument('-k','--k', required=True, type=int, dest="k")
+#     parser.add_argument('-n','--n', required=True, type=int, dest="n")
+#     parser.add_argument('-a','--alpha',required=True, type=float, dest="alpha")
+#     args = parser.parse_args()
     
-    perform_tests_multinom (p = list(args.p), k = args.k, N = args.n, alpha = args.alpha)
+#     perform_tests_multinom (p = list(args.p), k = args.k, N = args.n, alpha = args.alpha)
