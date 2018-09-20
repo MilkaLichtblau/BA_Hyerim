@@ -10,3 +10,4 @@
 #### /Minimum_target_table: the table of minimum target number is saved during the ranking function is being run
 #### /Plots: the plot diagrams are saved while the ranking function is being executed
 #### /Bachelor_thesis_hyerim: contains the Bachelor Thesis and the Proposal
+#### /result: contains the code for single and multiple test
